@@ -43,7 +43,7 @@
         $isk= $_POST['isk'];
         $date= $_POST['date'];
     
-        $con = mysqli_connect("localhost", "formdb_user", "abc123", "analytics");
+        $con = mysqli_connect("хост", "пользователь", "пароль", "название");
         if (!$con){
             die("Connection failed!" . mysqli_connect_error());
         }
