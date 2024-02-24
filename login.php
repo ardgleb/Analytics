@@ -6,7 +6,7 @@
         $email = $_POST['email'];
         $company = $_POST['company'];
 
-        $con = mysqli_connect("localhost", "formdb_user", "abc123", "analytics");
+        $con = mysqli_connect("хост", "пользователь", "пароль", "название");
         if (!$con){
             die("Connection failed!" . mysqli_connect_error());
         }
@@ -40,7 +40,7 @@
             <input type="email" name="email"  placeholder="    Почта" id="input"><br>
             <select name="company" id="input">
                 <?php
-                    $con = mysqli_connect("localhost", "formdb_user", "abc123", "analytics");
+                    $con = mysqli_connect("хост", "пользователь", "пароль", "название");
                     if (!$con){
                         die("Connection failed!" . mysqli_connect_error());
                     }
