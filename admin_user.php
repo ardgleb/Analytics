@@ -2,7 +2,7 @@
     if(isset($_POST['submit'])){
         $email = $_POST['email'];
     
-        $con = mysqli_connect("localhost", "formdb_user", "abc123", "analytics");
+        $con = mysqli_connect("хост", "пользователь", "пароль", "название");
         if (!$con){
             die("Connection failed!" . mysqli_connect_error());
         }
@@ -31,7 +31,7 @@
                 $info_array = explode('|', $info);
                 $name = $info_array[3];
 
-                $con = mysqli_connect("localhost", "formdb_user", "abc123", "analytics");
+                $con = mysqli_connect("хост", "пользователь", "пароль", "название");
                 if (!$con)
                 {
                     die("Connection failed!" . mysqli_connect_error());
