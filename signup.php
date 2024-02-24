@@ -3,7 +3,7 @@ if(isset($_POST['submit'])){
     $login = $_POST['login'];
     $pass = $_POST['password'];
     
-    $con = mysqli_connect("localhost", "formdb_user", "abc123", "analytics");
+    $con = mysqli_connect(""хост", "пользователь", "пароль", "название");
     if (!$con){
         die("Connection failed!" . mysqli_connect_error());
     }
