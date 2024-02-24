@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/x-icon" href="icon.png">
+        <title>Главная - Analytics</title>
+    </head>
+    <body>
+        <img src="title.png" id="img_index">
+        <button id="button_index"onclick="window.location.href='http://localhost/analytics/signup.php'">
+            Авторизоваться
+        </button>
+    </body>
+</html>
+<style>
+    @font-face {
+    font-family: "Manrope";
+    src: local("Manrope"), 
+         url("Manrope.ttf") format("ttf");
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: Manrope;
+        font-style: normal;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        position:absolute;
+        top:50%;
+        transform: translate(0%, -50%);
+    }
+    img{
+        pointer-events: none;
+    }
+    #img_index{
+        width: 100%;
+        
+    }
+    #button_index{
+        background-color: rgba(220, 30, 130, 1);
+        border-radius: 14px;
+        border:none;
+        background: #DC1E82;
+        width: 320px;
+        height: 70px;
+        position: absolute;
+        top: 73%;
+        right: 20%;
+        text-decoration: none;
+        color: #FFF;
+        font-size: 25px;
+    }
+</style>
